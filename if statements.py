@@ -37,4 +37,6 @@ for player in football_players:
         and player["preference"] == game_to_play):
 
         print(f'{player["name"]} {str(player["rating"])}')
+    else:
+        print("None in the directory. Find other people.")
 
