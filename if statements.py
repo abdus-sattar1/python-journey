@@ -40,3 +40,5 @@ for player in football_players:
     else:
         print("None in the directory. Find other people.")
 
+# else is used when you have 2 options
+# elif is used when you have many conditions that need to be checked before concluding
