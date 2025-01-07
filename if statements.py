@@ -24,6 +24,9 @@ football_players = [
 
 game_to_play = int(input(f"Will it be 5 or 7 a-side? "))
 
+if game_to_play != 5 or 7:
+    print("incorrect game type.")
+
 lowest_rating = int(input(f"what is the lowest rating you need? "))
 highest_rating = int(input(f"what is the highest rating you need? "))
 
