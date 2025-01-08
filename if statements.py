@@ -39,13 +39,14 @@ highest_rating = int(input(f"what is the highest rating you need? "))
 
 print("Players to use:")
 for player in football_players:
+    if lowest_rating <= player["rating"] <= highest_rating and player["preference"] == game_to_play:
+        print(f'{player["name"]} {player["rating"]}')
+        break
+else:
+    print("None in the directory. Find other people.")
 
-    if (lowest_rating <= player["rating"] <= highest_rating
-        and player["preference"] == game_to_play):
 
-        print(f'{player["name"]} {str(player["rating"])}')
-    else:
-        print("None in the directory. Find other people.")
+
 
 # else is used when you have 2 options
 # elif is used when you have many conditions that need to be checked before concluding
