@@ -25,8 +25,14 @@ football_players = [
 while True:
     game_input = input("Will it be a 5 or 7 a-side game? ")
 
-if game_to_play != 5 or 7:
-    print("incorrect game type.")
+    if game_input.isdigit():
+        game_to_play = int(game_input)
+        if game_to_play == 5 or game_to_play == 7:
+            break
+        else:
+            print("Please use the number 5 or 7 only.")
+    else:
+        print("Incorrect format, please enter a number.")
 
 lowest_rating = int(input(f"what is the lowest rating you need? "))
 highest_rating = int(input(f"what is the highest rating you need? "))
