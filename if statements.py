@@ -22,7 +22,8 @@ football_players = [
     {"name": "Junaid", "rating": 83, "preference": 5},
 ]
 
-game_to_play = int(input(f"Will it be 5 or 7 a-side? "))
+while True:
+    game_input = input("Will it be a 5 or 7 a-side game? ")
 
 if game_to_play != 5 or 7:
     print("incorrect game type.")
