@@ -1,8 +1,19 @@
-factor_3 = 3
-factor_5 = 5
 
-for count in range(1, 10001):
-        if count % factor_3 == 0 or factor_5 == 0:
-            print('fizzbuzz')
-        else:
-            print(count)
+user_input = int(input("What is your number? "))
+n = (user_input) + 1
+
+numbers_list = list(range(1,n))
+
+answer = []
+
+for count in numbers_list:
+    if count % 3 == 0 and count % 5 == 0:
+        answer.append('FizzBuzz')
+    elif count % 3 == 0:
+        answer.append('Fizz')
+    elif count % 5 == 0:
+        answer.append('Buzz')
+    else:
+        answer.append(count)
+
+print(answer)
