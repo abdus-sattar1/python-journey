@@ -2,7 +2,7 @@
 
 print("hello world and welcome to my journey!")
 
-# i'm going to make everything number related!
+# I'm going to make everything number related!
 
 number_chosen = int(input("think of a positive number "))
 if number_chosen > 0:
@@ -36,14 +36,14 @@ x, y, z = 4, "oranges", 5.6
 print(x, y, z)
 print(x + z)
 
-# global variables | can by used by everything, inside and outside of functions
+# global variables | can be used by everything, inside and outside of functions
 
-def myFunc():
+def func():
     global wont_work_unless_global
     wont_work_unless_global = "global worked!"
     print("User's name was", user_name)
 
-myFunc()
+func()
 print(wont_work_unless_global)
 
 #it is highlighted in yellow as it is bad practice to utilise global
