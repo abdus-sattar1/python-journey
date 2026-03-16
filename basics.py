@@ -47,3 +47,27 @@ func()
 print(wont_work_unless_global)
 
 #it is highlighted in yellow as it is bad practice to utilise global
+
+import random
+
+print(random.randrange(1, 10))
+
+# i have asked claude what i need to know to be able to make the next few changes in my fpl-dashboard project
+
+# learn lists, dicts, loops, conditionals
+
+shopping_list = ["apples", "oranges", "pears"]
+
+print(shopping_list[0])
+
+shopping_items = {
+    "name": "apples",
+    "price": 2.50,
+    "id": 0,
+}
+
+print(shopping_items["name"])
+print(shopping_items["price"])
+
+# goal is to make each each shopping_item a dict, and shopping_list the list.
+
