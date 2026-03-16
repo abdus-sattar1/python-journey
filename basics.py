@@ -18,5 +18,32 @@ user_age = input("Enter age: ")
 print("User's name is " + user_name + " and they are " + user_age + " years old")
 print(f"User's name is {user_name} and they are {user_age} years old!")
 
-# second way is quicker
+# f-string is more efficient and quicker
 
+x = 4
+y = "Bananas"
+z = float(x)
+
+print(x, y)
+
+# by casting you can turn the given variable into a specific data type
+
+print(type(x))
+print(type(y))
+print(type(z))
+
+x, y, z = 4, "oranges", 5.6
+print(x, y, z)
+print(x + z)
+
+# global variables | can by used by everything, inside and outside of functions
+
+def myFunc():
+    global wont_work_unless_global
+    wont_work_unless_global = "global worked!"
+    print("User's name was", user_name)
+
+myFunc()
+print(wont_work_unless_global)
+
+#it is highlighted in yellow as it is bad practice to utilise global
